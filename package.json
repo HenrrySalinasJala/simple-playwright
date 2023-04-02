@@ -1,0 +1,21 @@
+{
+  "name": "simple-playwright",
+  "version": "1.0.0",
+  "description": "Repo that contains a simple base e2e framework using playwright",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HenrrySalinasJala/simple-playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HenrrySalinasJala/simple-playwright/issues"
+  },
+  "homepage": "https://github.com/HenrrySalinasJala/simple-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.32.1"
+  }
+}
