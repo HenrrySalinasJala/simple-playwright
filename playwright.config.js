@@ -1,5 +1,5 @@
 // @ts-check
-const { defineConfig, devices } = require('@playwright/test');
+const { defineConfig, devices } = require('@playwright/test')
 
 /**
  * Read environment variables from file.
@@ -19,7 +19,7 @@ module.exports = defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers:  undefined,
+  workers: undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -32,7 +32,7 @@ module.exports = defineConfig({
     acceptDownloads: true,
     headless: false,
     screenshot: 'only-on-failure',
-     // Toggles bypassing Content-Security-Policy.
+    // Toggles bypassing Content-Security-Policy.
     bypassCSP: true,
     ignoreHTTPSErrors: true,
     // Maximum time each action such as `click()` can take. Defaults to 0 (no limit).
@@ -47,8 +47,8 @@ module.exports = defineConfig({
     // },
     {
       name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome' }, // or 'chrome-beta'
-    },
+      use: { ...devices['Desktop Chrome'], channel: 'chrome' } // or 'chrome-beta'
+    }
 
     // {
     //   name: 'firefox',
@@ -79,7 +79,7 @@ module.exports = defineConfig({
     //   name: 'Google Chrome',
     //   use: { ..devices['Desktop Chrome'], channel: 'chrome' },
     // },
-  ],
+  ]
 
   /* Run your local dev server before starting the tests */
   // webServer: {
@@ -87,5 +87,4 @@ module.exports = defineConfig({
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
-});
-
+})
