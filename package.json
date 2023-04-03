@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Repo that contains a simple base e2e framework using playwright",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "npx eslint  src",
+    "lint:fix": "npx eslint  src --fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HenrrySalinasJala/simple-playwright.git"
@@ -15,7 +18,22 @@
     "url": "https://github.com/HenrrySalinasJala/simple-playwright/issues"
   },
   "homepage": "https://github.com/HenrrySalinasJala/simple-playwright#readme",
-  "devDependencies": {
+  "dependencies": {
     "@playwright/test": "^1.32.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.7",
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/runtime": "^7.17.7",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-lean-imports": "^0.3.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.7.0"
   }
 }
