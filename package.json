@@ -4,7 +4,7 @@
   "description": "Repo that contains a simple base e2e framework using playwright",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint  src",
+    "lint": "npx eslint  src tests",
     "lint:fix": "npx eslint  src --fix"
   },
   "repository": {
